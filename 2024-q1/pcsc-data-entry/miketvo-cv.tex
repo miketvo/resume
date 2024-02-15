@@ -1,0 +1,184 @@
+% ============================================== %
+%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
+% ============================================== %
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[main=vietnamese,english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{latexsym}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage[usenames, dvipsnames]{color}
+
+% ----- Sections formatting
+\geometry{margin=8mm}
+\pagestyle{empty}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\titleformat{\section}{\vspace{-8pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+%
+
+% ----- Custom commands -----
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-6pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\coverLetterHeader}{
+  \small{
+    Tường-Minh (Mike) Võ\\
+    Thành phố Hồ Chí Minh, Việt Nam\\
+    (+84)-385-892-705\\
+    \href{mailto:miketvo@outlook.com}{miketvo@outlook.com}
+  }
+  \par\noindent\hrulefill
+}
+\newcommand{\p}[1]{#1\\\vspace{6pt}}
+%
+% ============================================== %
+
+
+% ============================================== %
+%%%%%%%%%%%%%%%%%%%%%% BODY %%%%%%%%%%%%%%%%%%%%%%
+% ============================================== %
+\begin{document}
+
+% ----- HEADING -----
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{Tường-Minh (Mike) Võ} & Email: \href{mailto:miketvo@outlook.com}{miketvo@outlook.com}\\
+  \href{https://github.com/miketvo}{\faGithub\space miketvo} $|$ \href{https://www.linkedin.com/in/miketvo/}{\faLinkedin\space miketvo} $|$ \href{https://miketvo.com/}{\faGlobe\space miketvo.com} & Mobile: (84)-385-892-705\\
+\end{tabular*}
+\hrule height 2pt
+%
+
+% ----- EDUCATION -----
+\section{Học Vấn}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Đại học RMIT Việt Nam}{Thành phố Hồ Chí Minh, Việt Nam}
+      {Cử nhân Công nghệ Thông tin về Trí tuệ Nhân tạo; GPA: 3.50/4.00}{10/2020 -- Tốt nghiệp: 03/2025}
+    \resumeSubheading
+      {Seattle Central College}{Seattle, WA, Hoa Kỳ}
+      {Associate of Liberal Arts and Sciences; GPA: 3.00/4.00}{9/2016 -- 10/2017}
+  \resumeSubHeadingListEnd
+
+% ----- RELEVANT COURSEWORK -----
+\section{Môn Học Liên Quan}
+  Phát triển Ứng dụng Full-stack,
+  Phát triển Ứng dụng Web,
+  Ứng dụng Cơ sở dữ liệu,
+  Cấu trúc Dữ liệu và Giải thuật,
+  Xây dựng Hệ thống CNTT,
+  Thiết kế Phần mềm,
+  Quản lý Dự án Kỹ thuật Phần mềm
+%
+
+% ----- PROOJECTS -----
+\section{Dự Án}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ứng dụng E-commerce Full-stack}{}
+      {\href{https://github.com/miketvo/rmit-isys2099-group9-app}{\faGithub\space miketvo/rmit-isys2099-group9-app}}{}
+      \resumeItemListStart
+        \resumeItem{Ngôn ngữ và Framework}
+          {NodeJS, Express, Mongoose, Vite, ReactJS, Bootstrap, Axios, MySQL, MongoDB}
+        \resumeItem{Khả năng lãnh đạo}
+          {Sử dụng phương Agile giúp quản lý dự án cho một nhóm sinh viên với nhiều kỹ năng khác nhau.}
+        \resumeItem{Thiết kế Cơ sở Dữ liệu}
+          {Làm việc dưới vai trò Kỹ sư Thiết kế Cơ sở Dữ Liệu chính, giúp deploy và integrate hệ thống cơ sở dữ liệu cho ứng dụng full-stack.} 
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Online Client Portfolio}{}
+      {\href{https://duonghanhi.netlify.app/}{\faGlobe\space duonghanhi.netlify.app}}{}
+      \resumeItemListStart
+        \resumeItem{Ngôn ngữ và Framework}
+          {JavaScript, Gatsby, PostCSS}
+        \resumeItem{Thiết kế UI/UX}
+          {Áp dụng phương thức Agile, làm việc online với khách hàng để thiết kế và phát triển một website với UI và trải nghiệm người dùng tối ưu, thân thiện, khớp với thương hiệu và chuẩn SEO}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Game}{}
+      {\href{https://miketvo.github.io/404-page.html}{\faGlobe\space miketvo.github.io/404-page}}{}
+      \resumeItemListStart
+        \resumeItem{Ngôn ngữ và Framework}
+          {JavaScript, Phaser 3, Box2D, Webpack}
+        \resumeItem{Lãnh đạo và làm việc nhóm}
+          {Giúp đỡ dưới vai trò trưởng nhóm các thành viên nhóm phát triển ứng dụng game HTML trên trình duyệt web thay thế cho trang 404 NOT FOUND. Host thông qua GitHub Pages.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bàn phím ảo mã nguồn mở Tiếng Việt cho phầm mềm bộ gõ Keyman}{}
+      {\href{https://github.com/miketvo/keyboards}{\faGithub\space miketvo/keyboards} $|$ \href{https://keyman.com/keyboards/vietnamese_telex}{\faGlobe\space Keyman - Vietnamese Telex} $|$ \href{https://keyman.com/keyboards/vietnamese_vni}{\faGlobe\space Keyman - Vietnamese VNI}}{}
+      \resumeItemListStart
+        \resumeItem{Ngôn ngữ và Framework}
+          {Python, Keyman Keyboard Language}
+        \resumeItem{Bộ tạo phím tắt tiếng Việt toàn diện}
+          {Sử dụng ngôn ngữ Python để tạo ra bộ cấu hình phím tắt Telex và VNI dựa trên phân tích âm tiết theo từ điển tiếng Việt thu thập qua internet.}
+        \resumeItem{Hợp tác mã nguồn mở}
+          {Hợp tác thông qua GitHub với các developer, admin, và cộng đồng người dùng Keyman để giải quyết bug và deploy hai bàn phím ảo trên kiến trúc của bộ gõ Keyman.}
+        \resumeItem{Triển khai}
+          {Cả phiên bản Telex và VNI tổng đạt được hơn 35,000 lượt tải về trên trang web Keyman.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mô hình Dự đoán Sốc nhiễm khuẩn}{}
+      {\href{https://github.com/miketvo/rmit2023a-cosc2753-assignment1}{\faGithub\space miketvo/rmit2023a-cosc2753-assignment1} $|$ \href{https://www.kaggle.com/datasets/chaunguynnghunh/sepsis/}{\faDatabase\space Dataset: Kaggle - chaunguynnghunh/sepsis}}{}
+      \resumeItemListStart
+        \resumeItem{Ngôn ngữ và Framework}
+          {Python, Scikit-Learn, Pandas, Seaborn}
+        \resumeItem{Điểm F1}
+          {Đạt được điểm $F_1$ là 0,86 thông qua xây dựng và áp dụng thuật toán Bagged Tree và pipeline xử lý và sàng lọc dữ liệu.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hệ thống Phân loại và Gợi ý Hoa}{}
+      {\href{https://github.com/miketvo/rmit2023a-cosc2753-assignment2}{\faGithub\space miketvo/rmit2023a-cosc2753-assignment2} $|$ \href{https://www.kaggle.com/datasets/miketvo/rmit-flowers/}{\faDatabase\space Dataset: Kaggle - miketvo/rmit-flowers}}{}
+      \resumeItemListStart
+        \resumeItem{Ngôn ngữ và Framework}
+          {Python, Keras, Tensorflow, Scikit-Learn, Pillow}
+        \resumeItem{Phát triển và Triển khai Mô hình Học máy}
+          {Xây dựng kiến trúc Convolutional Neural Network giúp trích xuất đặc trưng hình ảnh và một pipeline phân loại và gợi ý hình ảnh với điểm Accurcy đạt 0,7.}
+        \resumeItem{Khả năng Lãnh đạo}
+          {Cùng đội nghiên cứu sinh viên để sản xuất một bài báo cáo khoa học dữ liệu chất lượng cao về chủ đề này dưới vai trò trưởng đội.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+
+% ----- SKILLS -----
+\section{Kỹ Năng}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Lập trình}
+      {Python, SQL, Java, C/C++, JavaScript, PHP, HTML/CSS, Lua, Bash, Batch, Powershell, VBA, TeX}
+    \resumeSubItem{Công nghệ}
+      {ReactJS, GatsbyJS, NextJS, Vite, ExpressJS, MySQL, MongoDB, JUnit, Tensorflow, Keras, Pandas}
+    \resumeSubItem{Công cụ}
+      {Jira, Git, Vim, Visual Studio Code, Linux, Jupyter Lab/Notebook, Jetbrains IDEs, Excel}
+    \resumeSubItem{Ngôn ngữ}
+      {Tiếng Việt (Bản ngữ), Tiếng Anh (Trình độ song ngữ, TOEFL iBT 110/120)}
+  \resumeSubHeadingListEnd
+%
+
+\end{document}
+% ============================================== %
