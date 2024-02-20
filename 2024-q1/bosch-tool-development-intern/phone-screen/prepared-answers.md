@@ -29,12 +29,13 @@ Reminder: 看板（KanBan/Khán Bản）
 
 ## What do you know about our company?
 
-Bosch Vietnam...
+Your company has a CVT (continuous variable transmission) pushbelt manufaturing plant in Dong Nai. Bosch is a household name for mechanical engineering, often times utilizing automation and simulation technology in your design and manufacturing process. With my interests in software development and physics, I would love to be a part of the process.
 
 
 ## 4. Why are you the best candidate for this role?
 
-I am the best candidate for this position because I have experience building a brand’s social media presence from scratch. The reach I obtained in my last role translated to an 80-percent increase in proposal requests, which was measured using trackable links. I have also used my content marketing skills to improve website search ranking, leading to more conversions. Beyond that, I align with your company’s mission and want to be part of its exciting expansion.
+I am the best candidate for this internship position because I have a strong independent initiative to learn and adapt, specifically to apply my knowledge accumulated during my academic career and projects to achieve transformative and tangible results. Beyond that, my interests in applied mathematics and computer science align with your company’s specialization in high-tech manufacturing.
+
 
 ## 5. What are your salary expectations?
 
