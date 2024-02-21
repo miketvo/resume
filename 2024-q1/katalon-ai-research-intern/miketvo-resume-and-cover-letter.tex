@@ -1,0 +1,218 @@
+% ============================================== %
+%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
+% ============================================== %
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage[usenames, dvipsnames]{color}
+
+% ----- Sections formatting
+\geometry{margin=8mm}
+\pagestyle{empty}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\titleformat{\section}{\vspace{-8pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+%
+
+% ----- Custom commands -----
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-6pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\coverLetterHeader}{
+  \small{
+    Tuong-Minh (Mike) Vo\\
+    Ho Chi Minh City, Vietnam\\
+    (+84)-385-892-705\\
+    \href{mailto:miketvo@outlook.com}{miketvo@outlook.com}
+  }
+  \par\noindent\hrulefill
+}
+\newcommand{\p}[1]{#1\\\vspace{6pt}}
+%
+% ============================================== %
+
+
+% ============================================== %
+%%%%%%%%%%%%%%%%%%%%%% BODY %%%%%%%%%%%%%%%%%%%%%%
+% ============================================== %
+\begin{document}
+
+% ----- HEADING -----
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{Tuong-Minh (Mike) Vo} & Email: \href{mailto:miketvo@outlook.com}{miketvo@outlook.com}\\
+  \href{https://github.com/miketvo}{\faGithub\space miketvo} $|$ \href{https://www.linkedin.com/in/miketvo/}{\faLinkedin\space miketvo} $|$ \href{https://miketvo.com/}{\faGlobe\space miketvo.com} & Mobile: (84)-385-892-705\\
+\end{tabular*}
+\hrule height 2pt
+%
+
+% ----- EDUCATION -----
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RMIT University Vietnam}{Ho Chi Minh City, Vietnam}
+      {Bachelor of Information Technology in Artificial Intelligence; GPA: 3.50}{Oct. 2020 -- Expected: Mar. 2025}
+    \resumeSubheading
+      {Seattle Central College}{Seattle, WA, United States}
+      {Associate of Liberal Arts and Sciences; GPA: 3.00}{Sep. 2016 -- Aug. 2017}
+  \resumeSubHeadingListEnd
+
+% ----- RELEVANT COURSEWORK -----
+\section{Relevent Coursework}
+  Machine Learning,
+  Practical Data Science,
+  Database Application,
+  Web Development,
+  Fullstack Development,
+  Data Structures and Algorithms,
+  Computing Theory,
+  Artificial Intelligence,
+  Software Engineering Design
+%
+
+% ----- PROOJECTS -----
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {DsvCol}{}
+      {Open-source cross-platform CLI-application pretty-printing delimiter separated value files $|$ \href{https://github.com/miketvo/dsvcol}{\faGithub\space miketvo/dsvcol}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {C, CMake, Bash, PowerShell}
+        \resumeItem{Cross-platform Build Support}
+          {Developed cross-platform CMake build system for both Linux and Windows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-stack E-commerce Web Application}{}
+      {\href{https://github.com/miketvo/rmit-isys2099-group9-app}{\faGithub\space miketvo/rmit-isys2099-group9-app}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {NodeJS, Express, Mongoose, Vite, ReactJS, Bootstrap, Axios, MySQL, MongoDB}
+        \resumeItem{Leadership}
+          {Utilize Agile methodology to lead a team of student of multiple specializations.}
+        \resumeItem{Database Design}
+          {Worked as the lead relational database architect to help deploy the application database.} 
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Online Client Portfolio}{}
+      {\href{https://duonghanhi.netlify.app/}{\faGlobe\space duonghanhi.netlify.app}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {JavaScript, Gatsby, PostCSS}
+        \resumeItem{UI/UX Design}
+          {Worked remotely with the client to Designe and develop a user-friendly, responsive, and brand-conscious portfolio landing page.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Open Source Vietnamese Keyboard for Keyman Input Method Editor}{}
+      {\href{https://github.com/miketvo/keyboards}{\faGithub\space miketvo/keyboards} $|$ \href{https://github.com/miketvo/vn-kmn-compiler}{\faGithub\space miketvo/vn-kmn-compiler} $|$ \href{https://keyman.com/keyboards/vietnamese_telex}{\faGlobe\space Keyman - Vietnamese Telex} $|$ \href{https://keyman.com/keyboards/vietnamese_vni}{\faGlobe\space Keyman - Vietnamese VNI}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {Python, Keyman Keyboard Language}
+        \resumeItem{Exhaustive Vietnamese Keystrokes Generator}
+          {Utilized Python scripting to generate exhaustive syllable-based Telex and VNI keystrokes configurations from automated analysis and extraction of Vietnamese dictionaries. Related project: \href{https://github.com/miketvo/rime-ime-han-nom-data}{\faGithub\space Telex based Han Nom input method schema generator}.}
+        \resumeItem{Open-source Collaboration}
+          {Worked with Keyman developers and user community on keyboard deployment.}
+        \resumeItem{Deployment}
+          {Both Telex and VNI versions combined has over 35.000 downloads in total on Keyman website.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Imdupes}{}
+      {Open-source versatile image deduplicator inspired by fdupes $|$ \href{https://github.com/miketvo/imdupes}{\faGithub\space miketvo/imdupes}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {Python, PyInstaller, Pillow, NumPy, Python unittest}
+        \resumeItem{Innovative Perceptual Hashing}
+          {Developed a novel high-performance and efficient in-house image hashing algorithm that utilizes both traditional perceptual hashing techniques combined with color histogram analysis, which has never been done before.}
+        \resumeItem{Deployment}
+          {Deployed the application on Homebrew and Scoop package managers for cross-platform installation process on MacOS, Linux, and Windows.}
+      \resumeItemListEnd
+    
+      \resumeSubheading
+      {Sepsis Prediction Model}{}
+      {\href{https://github.com/miketvo/rmit2023a-cosc2753-assignment1}{\faGithub\space miketvo/rmit2023a-cosc2753-assignment1} $|$ \href{https://www.kaggle.com/datasets/chaunguynnghunh/sepsis/}{\faDatabase\space Dataset: Kaggle - chaunguynnghunh/sepsis}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {Python, Scikit-Learn, Pandas, Seaborn}
+        \resumeItem{F1 Score}
+          {Achieved a $F_1$ score of 0.86 using a customized Bagged Tree model and robust data cleaning and preprocessing pipeline.}
+        \resumeItem{Research Writing}
+          {Produced a high quality research paper on the dataset and models used for sepsis prediction as part of the assignment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flower Classification and Recommendation System}{}
+      {\href{https://github.com/miketvo/rmit2023a-cosc2753-assignment2}{\faGithub\space miketvo/rmit2023a-cosc2753-assignment2} $|$ \href{https://www.kaggle.com/datasets/miketvo/rmit-flowers/}{\faDatabase\space Dataset: Kaggle - miketvo/rmit-flowers}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {Python, Keras, Tensorflow, Scikit-Learn, Pillow}
+        \resumeItem{Model Development and Deployment}
+          {Developed an in-house CNN solution for feature extraction and a robust flower image classification and recommendation pipeline with an accuracy score of 0.7.}
+        \resumeItem{Leadership}
+          {Led student research team to produce a high-quality research paper on the subject matter.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+
+% ----- SKILLS -----
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming}
+      {C/C++, Java, Python, SQL, JavaScript, PHP, HTML/CSS, Lua, Bash, Batch, Powershell, VBA, TeX}
+    \resumeSubItem{Technologies}
+      {ReactJS, GatsbyJS, NextJS, Vite, ExpressJS, MySQL, MongoDB, JUnit, Tensorflow, Keras, Pandas}
+    \resumeSubItem{Tools}
+      {Jira, Git, Vim, VS Code, Linux (Ubuntu \& Arch Linux), Jupyter Lab/Notebook, Jetbrains IDEs, Excel}
+    \resumeSubItem{Languages}
+      {Vietnamese (Native), English (Bilingual)}
+  \resumeSubHeadingListEnd
+%
+
+\newpage
+
+% ----- COVER LETTER -----
+\coverLetterHeader
+
+\p{\today}
+
+\p{Dear Hiring Manager,}
+
+\p{My name is Mike Vo. I am writing to express my interest in applying for the AI / Software Research Intern position at Katalon. Currently pursuing a Bachelor degree in Information Technology with specialization in Artificial Intelligence \& Data Analytics at RMIT University Vietnam, and anticipating graduation in early 2025, I am excited about the opportunity to contribute my skills and enthusiasm to your team.}
+
+\p{In my academic journey, I have gained a solid foundation in Machine Learning, Practical Data Science, and Artificial Intelligence. Through these academic experience, I have gained strong analytical and research skill, along with a keen attention to detail. I am constantly striving to improve and learn more about new developments in data analysis and modelling, and my eager-to-learn outlook allows me to learn and develop throughout my academic and professional career. I am confident in my ability to adapt and leverage my research skill as well as data science and machine learning knowledge to contribute practical solutions for your team.}
+
+\p{As a proactive learner and team player, I have successfully completed various projects, ranging from machine learning classification and recommendation system to open-source software and web development. One notable achievement is my work on the Flower Classification and Recommendation System course project at RMIT University Vietnam, where I worked as the lead researcher and machine learning specialist of my team, utilizing convolutional neural network and deep learning to achieve a good performance result on our flower classification model. This has strengthen my skill to work both independently and in a team environment, with a strong focus on the data science knowledge of data analysis, classification algorithms, and clustering algorithms.}
+
+\p{Thank you for your time and consideration. I look forward to the opportunity of contributing to and learning at Katalon.}
+
+\p{Best regards,\\
+Tuong-Minh (Mike) Vo}
+%
+
+\end{document}
+% ============================================== %
