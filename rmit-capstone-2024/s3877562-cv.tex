@@ -5,6 +5,7 @@
 
 \usepackage{latexsym}
 \usepackage{geometry}
+\usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -17,12 +18,18 @@
 \urlstyle{same}
 \raggedbottom
 \raggedright
-\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 %
 
 % ----- Custom commands -----
-\newcommand{\resumeItemHeading}[1]{\item\small{\textbf{#1:}}\vspace{-2pt}}
-\newcommand{\resumeItemPlain}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeItemHeading}[1]{\item\small{\textbf{#1:}}\vspace{-1.6pt}}
+\newcommand{\resumeItemPlain}[1]{
+  \setstretch{0.96}
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+  \setstretch{1.0}
+}
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -33,7 +40,7 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \renewcommand{\labelitemii}{$\circ$}
@@ -98,16 +105,16 @@
         \resumeItemHeading{Responsibilities}
           \resumeSubItemListStart
             \resumeItemPlain
-              {Coordinated and executed project timeline as the Project Lead and SCRUM Master.}
+              {Led the project as the Project Lead and SCRUM Master, coordinating and executing the project timeline.}
             \resumeItemPlain
               {Served as the lead database architect for the project's relational and NoSQL databases.}
           \resumeSubItemListEnd
         \resumeItemHeading{Achievedments}
           \resumeSubItemListStart
             \resumeItemPlain
-              {Utilized Agile and SCRUM methodologies to lead and enable a team of student of multiple specializations to deliver the project delivarables in a timely manner for each sprint while preventing scoop creep and managing project risks.}
+              {Utilized Agile and SCRUM methodologies to lead and enable a team of student of multiple specializations to deliver the project delivarables in a timely manner for each sprint while preventing scope creep and managing project risks.}
             \resumeItemPlain
-              {Successfully deployed and integrated the application MySQL and MongoDB database with its backend and frontend components using REST API.}
+              {Successfully deployed and integrated the application's MySQL and MongoDB databases with its backend and frontend components using REST API.}
           \resumeSubItemListEnd
       \resumeItemListEnd
 
@@ -120,7 +127,7 @@
           \resumeItem{Responsibilities}
             {Led student research team to produce a high-quality research paper on the subject matter.}
           \resumeItem{Achievements}
-            {Produced an in-house CNN solution for feature extraction and a robust flower image classification and recommendation pipeline ready for deployment with an accuracy score of 0.7.}
+            {Produced a robust in-house convolutional neural network solution for flower image classification and recommendation pipeline ready for deployment with an accuracy score of 0.7.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -134,7 +141,7 @@
         \resumeItemHeading{Achievements}
           \resumeSubItemListStart
             \resumeItemPlain
-              {Achieved a $F_1$ score of 0.86 using the Bagged Tree algorithm and robust data cleaning and preprocessing pipeline.}
+              {Achieved a $F_1$ score of 0.86 using the Bagged Tree algorithm and implementing a robust data cleaning and preprocessing pipeline.}
             \resumeItemPlain
               {Produced a high-quality research paper on the dataset and models used for sepsis prediction.}
           \resumeSubItemListEnd
@@ -151,12 +158,11 @@
           \resumeItemHeading{Achievements}
             \resumeSubItemListStart
               \resumeItemPlain
-                {Utilized Python scripting to generate exhaustive syllable-based Telex and VNI keystrokes configurations from automated analysis and extraction of Vietnamese dictionaries. Related project: \href{https://github.com/miketvo/rime-ime-han-nom-data}{\faGithub\space Telex based Han Nom input method schema generator}.}
+                {Developed Python scripts to generate exhaustive syllable-based Telex and VNI keystrokes configurations by automatically analyzing and extracting data from Vietnamese dictionaries. Related project: \href{https://github.com/miketvo/rime-ime-han-nom-data}{\faGithub\space Telex based Han Nom input method schema generator}.}
               \resumeItemPlain
                 {Both Telex and VNI keyboard versions combined has over 35.000 accumulative downloads in total on Keyman website as of 2024: \href{https://keyman.com/keyboards/vietnamese_telex}{\faGlobe\space Keyman - Vietnamese Telex} $|$ \href{https://keyman.com/keyboards/vietnamese_vni}{\faGlobe\space Keyman - Vietnamese VNI}.}
             \resumeSubItemListEnd
       \resumeItemListEnd
-
 
       \resumeSubheading
         {Online Client Portfolio}{Jun. - Jul. 2021}
@@ -165,16 +171,15 @@
           \resumeItem{Languages and Frameworks}
             {JavaScript, Gatsby, PostCSS}
           \resumeItem{Responsibilities}
-            {Worked remotely with the client to design and develop a user-friendly, responsive, and brand-conscious portfolio landing page.}
+            {Worked remotely with the client to design and develop a brand-conscious, user-friendly, and responsive portfolio landing page.}
           \resumeItem{Achievements}
-            {Successfully highlighted the client's teaching experience with an interactive and attractive online portfolio, hosted using a distributed CDN and registered to a unique domain name that the client kept for close to 2 years.}
+            {Developed an interactive and attractive online portfolio to showcase the client's teaching experience, hosted using a distributed CDN and registered to a unique domain name for nearly 2 years.}
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 %
 
 % ----- SKILLS -----
-\vspace{-18pt}
 \section{Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Programming}
