@@ -1,0 +1,197 @@
+% ============================================== %
+%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
+% ============================================== %
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage[usenames, dvipsnames]{color}
+
+% ----- Sections formatting
+\geometry{margin=6mm}
+\pagestyle{empty}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+%
+
+% ----- Custom commands -----
+\newcommand{\resumeItemHeading}[1]{\item\small{\textbf{#1:}}\vspace{-1.6pt}}
+\newcommand{\resumeItemPlain}[1]{
+  \setstretch{0.96}
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+  \setstretch{1.0}
+}
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$-$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=16pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-2pt}}
+%
+% ============================================== %
+
+
+% ============================================== %
+%%%%%%%%%%%%%%%%%%%%%% BODY %%%%%%%%%%%%%%%%%%%%%%
+% ============================================== %
+\begin{document}
+
+% ----- HEADING -----
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{Tuong-Minh (Mike) Vo} & Ho Chi Minh City, Vietnam\\
+  Data Scientist \& Software Engineer & Mobile: (+84)-385-892-705\\
+  \href{https://github.com/miketvo}{\faGithub\space miketvo} $|$ \href{https://www.linkedin.com/in/miketvo/}{\faLinkedin\space miketvo} $|$ \href{https://miketvo.com/}{\faGlobe\space miketvo.com} & Email: \href{mailto:miketvo@outlook.com}{miketvo@outlook.com}\\
+\end{tabular*}
+\hrule height 2pt
+%
+
+% ----- EDUCATION -----
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RMIT University Vietnam}{Ho Chi Minh City, Vietnam}
+      {Bachelor of Information Technology in Artificial Intelligence; GPA: 3.50/4.00}{Oct. 2020 -- Expected: Mar. 2025}
+    \resumeSubheading
+      {Seattle Central College}{Seattle, WA, United States}
+      {Associate of Liberal Arts and Sciences; GPA: 3.00/4.00}{Sep. 2016 -- Aug. 2017}
+  \resumeSubHeadingListEnd
+
+% ----- RELEVANT COURSEWORK -----
+\section{Relevant Coursework}
+  Machine Learning,
+  Practical Data Science,
+  Data Structures and Algorithms,
+  Computing Theory,
+  Artificial Intelligence,
+  Fullstack Development,
+  Database Application,
+  Software Engineering Project Management
+%
+
+% ----- PROJECTS -----
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full-stack E-commerce Web Application (React/Node/RDBMS/NoSQL)}{Aug. - Sep. 2023}
+      {\href{https://github.com/miketvo/rmit-isys2099-group9-app}{\faGithub\space miketvo/rmit-isys2099-group9-app}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {NodeJS, Express, Mongoose, Vite, React, Bootstrap, Axios, MySQL, MongoDB}
+        \resumeItemHeading{Responsibilities}
+          \resumeSubItemListStart
+            \resumeItemPlain
+              {Led the project as the Project Lead and SCRUM Master, coordinating and executing the project timeline.}
+            \resumeItemPlain
+              {Served as the lead database architect for the project's relational and NoSQL databases.}
+          \resumeSubItemListEnd
+        \resumeItemHeading{Achievements}
+          \resumeSubItemListStart
+            \resumeItemPlain
+              {Utilized Agile and SCRUM methodologies to lead and enable a team of student of multiple specializations to deliver the project delivarables in a timely manner for each sprint while preventing scope creep and managing project risks.}
+            \resumeItemPlain
+              {Successfully deployed and integrated the application's MySQL and MongoDB databases with its backend and frontend components using REST API.}
+          \resumeSubItemListEnd
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flower Classification and Recommendation System}{May - Jun. 2023}
+      {\href{https://github.com/miketvo/rmit2023a-cosc2753-assignment2}{\faGithub\space miketvo/rmit2023a-cosc2753-assignment2} $|$ \href{https://www.kaggle.com/datasets/miketvo/rmit-flowers/}{\faDatabase\space Dataset: Kaggle - miketvo/rmit-flowers}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {Python, Keras, Tensorflow, Scikit-Learn, Pillow}
+          \resumeItem{Responsibilities}
+            {Led student research team to produce a high-quality research paper on the subject matter.}
+          \resumeItem{Achievements}
+            {Produced a robust in-house convolutional neural network solution for flower image classification and recommendation pipeline ready for deployment with an accuracy score of 0.7.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sepsis Prediction Model}{Apr. - May 2023}
+      {\href{https://github.com/miketvo/rmit2023a-cosc2753-assignment1}{\faGithub\space miketvo/rmit2023a-cosc2753-assignment1} $|$ \href{https://www.kaggle.com/datasets/chaunguynnghunh/sepsis/}{\faDatabase\space Dataset: Kaggle - chaunguynnghunh/sepsis}}{}
+      \resumeItemListStart
+        \resumeItem{Languages and Frameworks}
+          {Python, Scikit-Learn, Pandas, Seaborn}
+        \resumeItem{Responsibilities}
+          {Served as the solo data scientist and researcher for the assignment project.}
+        \resumeItemHeading{Achievements}
+          \resumeSubItemListStart
+            \resumeItemPlain
+              {Achieved a $F_1$ score of 0.86 using the Bagged Tree algorithm and implementing a robust data cleaning and preprocessing pipeline.}
+            \resumeItemPlain
+              {Produced a high-quality research paper on the dataset and models used for sepsis prediction.}
+          \resumeSubItemListEnd
+      \resumeItemListEnd
+  
+      \resumeSubheading
+        {Open Source Vietnamese Keyboard for Keyman Input Method Editor}{Feb. 2022 - Feb. 2023}
+        {\href{https://github.com/miketvo/keyboards}{\faGithub\space miketvo/keyboards} $|$ \href{https://github.com/miketvo/vn-kmn-compiler}{\faGithub\space miketvo/vn-kmn-compiler}}{}
+        \resumeItemListStart
+          \resumeItem{Languages and Frameworks}
+            {Python, Keyman Keyboard Language}
+          \resumeItem{Responsibilities}
+            {Worked with Keyman administrators, developers, and its user community on keyboard development, maintenance, and deployment within an international open-sourced collaborative environment.}
+          \resumeItemHeading{Achievements}
+            \resumeSubItemListStart
+              \resumeItemPlain
+                {Developed Python scripts to generate exhaustive syllable-based Telex and VNI keystrokes configurations by automatically analyzing and extracting data from Vietnamese dictionaries. Related project: \href{https://github.com/miketvo/rime-ime-han-nom-data}{\faGithub\space Telex based Han Nom input method schema generator}.}
+              \resumeItemPlain
+                {Both Telex and VNI keyboard versions combined has over 35.000 accumulative downloads on Keyman website as of 2024: \href{https://keyman.com/keyboards/vietnamese_telex}{\faGlobe\space Keyman - Vietnamese Telex} $|$ \href{https://keyman.com/keyboards/vietnamese_vni}{\faGlobe\space Keyman - Vietnamese VNI}.}
+            \resumeSubItemListEnd
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Online Client Portfolio}{Jun. - Jul. 2021}
+        {\href{https://duonghanhi.netlify.app/}{\faGlobe\space duonghanhi.netlify.app}}{}
+        \resumeItemListStart
+          \resumeItem{Languages and Frameworks}
+            {JavaScript, Gatsby, PostCSS}
+          \resumeItem{Responsibilities}
+            {Worked remotely with the client to design and develop a brand-conscious, user-friendly, and responsive portfolio landing page.}
+          \resumeItem{Achievements}
+            {Developed an interactive and attractive online portfolio to showcase the client's teaching experience, hosted using a distributed CDN and registered to a unique domain name for nearly 2 years.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+
+% ----- SKILLS -----
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming}
+      {Python, SQL, Java, C/C++, JavaScript, PHP, HTML/CSS, Lua, Bash, Batch, Powershell, TeX}
+    \resumeSubItem{Technologies}
+      {Tensorflow, Keras, Pillow, Scikit-Learn, Pandas, React, Gatsby, NextJS, Vite, Express, MongoDB, MySQL}
+    \resumeSubItem{Tools}
+      {Jira, GitHub, BitBucket, Git, Vim, VS Code, Linux, Jupyter Lab/Notebook, Jetbrains IDEs, Figma, Illustrator}
+    \resumeSubItem{Languages}
+      {Vietnamese (Native), English (Bilingual)}
+  \resumeSubHeadingListEnd
+%
+
+\end{document}
+% ============================================== %
